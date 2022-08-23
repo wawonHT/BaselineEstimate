@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<root>
+	<target>execute_test</target>
+	
+	<inputFilePath form="path">./sm190905_extract_for_exp.csv</inputFilePath>
+	<outputDirectoryRoot form="path">.</outputDirectoryRoot>
+	<inputVariables form="sarray">P_L W5 TO Rs Cth T_SA PLp1 PLp2 PLp3 TSAp1 TSAp2 TSAp3</inputVariables>
+	<outputVariables form="sarray">W15n TSA15n</outputVariables>
+	<hiddenUnits form="int">10</hiddenUnits>
+	<seriesLength form="int">6</seriesLength>
+	<epoch form="int">100</epoch>
+	
+	<ignoreHours form="tarray">12:00:00 13:00:00</ignoreHours>
+	
+	<randomSeed form="int">12345</randomSeed>
+	
+	<trainingDates form="darray">20180801 20180802 20180806 20180807 20180808 20180809 20180810 20180816 20180817 20180820 20180821 20180823 20180824 20180828 20180829 20180830 20180831</trainingDates>
+	<testDates form="darray">20180803 20180822</testDates>
+	
+	
+	<max form="farray">16.00 1.33 40.50 40.00 48.00 8.50 16.00 16.00 16.00 8.50 8.50 8.50 3.99 8.50</max>
+	<min form="farray">0.00 0.00 22.00 0.00 0.00 -3.00 0.00 0.00 0.00 -3.00 -3.00 -3.00 0.00 -3.00</min>
+	
+</root>
